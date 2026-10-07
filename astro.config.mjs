@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import starlightVersions from 'starlight-versions'
+//import starlightVersions from 'starlight-versions' //implement when we work on 1.1
 
 export default defineConfig({
   site: 'https://proto.usesable.de/',
@@ -31,7 +31,7 @@ export default defineConfig({
 				},
       ],
       plugins: [
-        starlightVersions({
+        /*starlightVersions({
           exclude: ["implementations/**"],
           versions: [
             {
@@ -39,7 +39,7 @@ export default defineConfig({
               label: 'v1.0',
             },
           ],
-        }),
+          }),*/
       ],
 		}),
 	],
