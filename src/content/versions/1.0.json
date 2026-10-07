@@ -1,24 +1,51 @@
 {
   "sidebar": [
     {
-      "label": "Guides",
+      "label": "Implementations",
       "items": [
         {
-          "label": "Example Guide",
-          "slug": "guides/example"
-        }
-      ]
-    },
-    {
-      "label": "Reference",
-      "items": [
+          "label": "Overview",
+          "slug": "implementations"
+        },
         {
-          "autogenerate": {
-            "directory": "reference"
-          }
+          "label": "Clients",
+          "slug": "implementations/clients"
+        },
+        {
+          "label": "Servers",
+          "slug": "implementations/servers"
+        },
+        {
+          "label": "SDKs & Libraries",
+          "slug": "implementations/sdk-libraries"
+        },
+        {
+          "label": "Integrations",
+          "slug": "implementations/integrations"
+        },
+        {
+          "label": "Bridges",
+          "slug": "implementations/bridges"
+        },
+        {
+          "label": "Tools",
+          "slug": "implementations/tools"
+        },
+        {
+          "label": "Submitting an Implementation",
+          "slug": "implementations/submitting"
         }
       ]
     }
   ],
-  "excluded": []
+  "excluded": [
+    "implementations",
+    "implementations/bridges",
+    "implementations/clients",
+    "implementations/integrations",
+    "implementations/sdk-libraries",
+    "implementations/servers",
+    "implementations/submitting",
+    "implementations/tools"
+  ]
 }

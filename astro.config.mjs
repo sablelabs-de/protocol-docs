@@ -16,9 +16,18 @@ export default defineConfig({
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
 				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+        {
+					label: 'Implementations',
+					items: [
+            { label: 'Overview', slug: 'implementations' },
+            { label: 'Clients', slug: 'implementations/clients' },
+            { label: 'Servers', slug: 'implementations/servers' },
+            { label: 'SDKs & Libraries', slug: 'implementations/sdk-libraries' },
+            { label: 'Integrations', slug: 'implementations/integrations' },
+            { label: 'Bridges', slug: 'implementations/bridges' },
+            { label: 'Tools', slug: 'implementations/tools' },
+						{ label: 'Submitting an Implementation', slug: 'implementations/submitting' },
+					],
 				},
       ],
       plugins: [
