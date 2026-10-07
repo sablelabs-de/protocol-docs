@@ -1,13 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightVersions from 'starlight-versions'
 
-// https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Sable Protocol',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/sablelabs-de/proto-www' }],
 			sidebar: [
 				{
 					label: 'Guides',
@@ -20,7 +20,17 @@ export default defineConfig({
 					label: 'Reference',
 					items: [{ autogenerate: { directory: 'reference' } }],
 				},
-			],
+      ],
+      plugins: [
+        starlightVersions({
+          versions: [
+            {
+              slug: '1.0',
+              label: 'v1.0',
+            },
+          ],
+        }),
+      ],
 		}),
 	],
 });
