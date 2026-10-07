@@ -8,7 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
       title: 'Sable Protocol',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/sablelabs-de/proto-www' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/sablelabs-de/protocol-docs' }],
       sidebar: [
         {
 					label: 'Specification',
