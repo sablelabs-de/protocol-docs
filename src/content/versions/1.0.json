@@ -1,6 +1,15 @@
 {
   "sidebar": [
     {
+      "label": "Specification",
+      "items": [
+        {
+          "label": "Overview",
+          "slug": "specification"
+        }
+      ]
+    },
+    {
       "label": "Implementations",
       "items": [
         {

@@ -4,16 +4,16 @@ import starlight from '@astrojs/starlight';
 import starlightVersions from 'starlight-versions'
 
 export default defineConfig({
+  site: 'https://proto.usesable.de/',
 	integrations: [
 		starlight({
-			title: 'Sable Protocol',
+      title: 'Sable Protocol',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/sablelabs-de/proto-www' }],
-			sidebar: [
-				{
-					label: 'Guides',
+      sidebar: [
+        {
+					label: 'Specification',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+            { label: 'Overview', slug: 'specification' },
 					],
 				},
         {
@@ -32,6 +32,7 @@ export default defineConfig({
       ],
       plugins: [
         starlightVersions({
+          exclude: ["implementations/**"],
           versions: [
             {
               slug: '1.0',
